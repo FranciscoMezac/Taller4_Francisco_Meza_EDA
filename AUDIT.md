@@ -57,7 +57,7 @@ pero la decisión es discutible, clasifícala como diseño.
 
 | ID | Ubicación | Decisión observada | Por qué es discutible | Impacto | Propuesta | Prioridad |
 | :--- | :--- | :--- | :--- | :--- | :--- | :---: |
-| H-01 | `src/...:línea` | | | | | Alta/Media/Baja |
+| H-01 | `src/tree-97` | | | | | Alta/Media/Baja |
 | H-02 | `src/...:línea` | | | | | |
 | H-03 | `src/...:línea` | | | | | |
 
