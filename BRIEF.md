@@ -106,6 +106,22 @@ Los hallazgos pueden ser de diseño o de deuda de implementación. No es
 obligatorio encontrar un error de correctitud. Si encuentras más de tres,
 mejor; pero tres bien argumentados son suficientes para el piso.
 
+### 4.5 Autochequeo antes de entregar
+
+Antes de cerrar el trabajo, verifica:
+
+- **☐** Mi diagrama de clases muestra las tres clases y sus relaciones.
+- **☐** Mi diagrama de secuencia muestra el flujo de `insert`.
+- **☐** Mi `AUDIT.md` tiene al menos tres hallazgos.
+- **☐** Cada hallazgo indica línea, impacto y propuesta.
+- **☐** Mi matriz declara el modelo de costo y las condiciones `N`, `B`, `M`.
+- **☐** Incluí al menos dos trazas, no solo fórmulas.
+- **☐** Puedo explicar mis hallazgos sin leer.
+- **☐** Puedo modificar una parte del código en vivo.
+
+No necesitas encontrar todas las decisiones posibles. Con tres hallazgos
+sólidos y los diagramas, cumples el mínimo.
+
 ---
 
 ## 5. Reglas
