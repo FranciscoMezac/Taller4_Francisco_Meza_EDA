@@ -1,9 +1,9 @@
 # Informe de Auditoría — B-Tree
 
 **Asignatura:** Estructuras de Datos Avanzadas (IC10D – EDA)  
-**Estudiante:** [Nombre]  
-**RUT:** [RUT]  
-**Fecha:** [AAAA-MM-DD]  
+**Estudiante:** [Francisco Meza Copaira]  
+**RUT:** [20885256-6]  
+**Fecha:** [19-11-2026]  
 **Taller:** 4 — Auditoría de un B-Tree
 
 ---
@@ -57,7 +57,7 @@ pero la decisión es discutible, clasifícala como diseño.
 
 | ID | Ubicación | Decisión observada | Por qué es discutible | Impacto | Propuesta | Prioridad |
 | :--- | :--- | :--- | :--- | :--- | :--- | :---: |
-| H-01 | `src/tree-97` | | | | | Alta/Media/Baja |
+| H-01 | `src/tree-97` |Se elimina un nodo pero no se verifica si es un nodo hoja, o si tiene hermanos y al final para reordenar, se hace un rebuild a todo el arbol sin el nodo que se esta eliminando| Es discutible ya que primero no verifica si es un hoja o un hermano, si es un nodo hoja simplemente es eliminar este nodo y el costo computacional seria minimo, si es un hermano se tiene que reordenar el arbol y aun asi el costo computacional seria mucho mas bajo que rehacer el arbol completo| Es mucho mas costoso computacionalmente | Verificar que nodo estamos eliminando, si es un hoja, si tiene hijos, si tiene hermano, una vez que se haya eliminado la clave, reordenar el arbol, no rehacerlo. | ALTA |
 | H-02 | `src/...:línea` | | | | | |
 | H-03 | `src/...:línea` | | | | | |
 
